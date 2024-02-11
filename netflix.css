@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+.main-divs {
+    background-color: rgba(0, 0, 0, 0.718);
+    height: 500px;
+    margin-bottom: 4px;
+}
+
+.landing-img-div {
+    position: relative;
+    width: 84%;
+    height: 97vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/landingimg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    margin-bottom: 4px;
+}
+.landing-img {
+    height: 700px; 
+    width: 1500px; 
+    opacity: 0.5;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.sign-in-button {
+    background-color: red;
+    color: white;
+    height: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-right: 68px;
+}
+
+.languages-dropdown-btn {
+    border: 1px solid grey;
+    background: transparent;
+    height: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.languages-dropdown {
+    background: transparent;
+    color: white;
+    border: none;
+    appearance: none; 
+    margin-right: 5px;
+}
+
+.netflix-logo {
+    width: 150px;
+    margin-left: 48px;
+    cursor: pointer
+}
+
+.landing-pg-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+
+.landing-pg-content h1 {
+    font-size: 43px;
+    font-weight:900;
+    width: 919px;
+    margin: 0;
+}
+
+.landing-pg-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.landing-pg-content p {
+    font-size: 20px;
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    float: 1;
+}
+
+.email-form input {
+    border: 1px solid rgb(185, 183, 183);
+    background: transparent;
+    height: 60px;
+    margin-left: 200px;
+    border-radius: 4px;
+    font-size: medium;
+    padding-left: 20px;
+    flex: 1;
+}
+
+.email-form button {
+    background-color: red;
+    color: white;
+    height: 60px;
+    padding: 0% 20px;
+    margin-right: 175px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-left: 6px;
+}
+
+.features {
+    padding: 50px 12%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 80px 0;
+    flex-direction: row;
+}
+
+.text-col, .img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    position: relative;
+}
+
+.img-col img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.video1 {
+    position: absolute;
+    top: 91px;
+    right: 83px;
+    width: 416px;
+    z-index: -1;
+}
+
+.video2 {
+    position: absolute;
+    top: 62px;
+    right: 123px;
+    width: 344px;
+    z-index: -1;
+}
+
+.text-col h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-col p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.pop-up {
+    position: absolute;
+    height: 100px;
+    width: 310px;
+    background-color: black;
+    border: 1px solid gray;
+    bottom: 30px;
+    left: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.pop-up .poster img {
+    height: 85px;
+}
+
+.pop-up .downloading img {
+    height: 47px;
+    width: 47px;
+}
+
+.pop-up .show-name h4 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.pop-up .show-name p {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(31, 31, 255);
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+}
+
+.faq h2 {
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.faq p {
+    font-size: 20px;
+}
+
+.accordion {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.accordion li {
+    list-style: none;
+    width: 99%;
+    padding: 5px;
+    margin: auto;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(45, 44, 44);
+}
+
+label::after {
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .answer {
+    background-color: rgb(45, 44, 44);
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 25px;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .answer {
+    max-height: 500px;
+    padding: 30px 20px;
+}
+
+.accordion li label:hover {
+    background-color: rgb(70, 69, 69);
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(44deg);
+}
+
+.contact {
+    padding: 50px;
+    color: rgb(192, 190, 190);
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.contact h4, h5 {
+    margin-left: 95px;
+}
+
+.contact p, u {
+    cursor: pointer;
+}
+
+.contact-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1270px;
+    text-decoration: underline;
+}
+
+.contact-lang {
+    margin: 20px 95px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0%;
+    margin-top: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+hr {
+    height: 6px;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    width: 100%;
+}
